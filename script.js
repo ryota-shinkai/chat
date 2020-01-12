@@ -42,7 +42,7 @@ navigator.mediaDevices.getUserMedia({video: true, audio: true})
 
   $('#end-call').click(function(){
   existingCall.close();
-})
+});
 
 peer.on('call', function(call){
   call.answer(localStream);
